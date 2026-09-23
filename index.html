@@ -130,6 +130,14 @@
   body.rezon .tabs{z-index:41;background:#000;padding-bottom:18px;}
   .tabs button:focus-visible{outline:1px solid #fff;outline-offset:4px;}
   @media (prefers-reduced-motion:reduce){ .rez,.rez.on,.tabs{transition:none;} }
+
+  /* кнопка настроек выше плашки «Powered by Netlify» в правом нижнем углу */
+  .fab{bottom:68px;}
+  .cfg{bottom:110px;max-height:calc(100vh - 140px);}
+  @media (max-width:640px){
+    .fab{bottom:calc(64px + env(safe-area-inset-bottom));}
+    .cfg{bottom:0;max-height:none;}
+  }
 </style>
 </head>
 <body>
